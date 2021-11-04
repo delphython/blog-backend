@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
 <html lang="en">
 <head>
@@ -41,7 +42,7 @@
     </div>
   </header>
   <!--================Header Menu Area =================-->
-
+  {% block content %}
   <!--================ Hero sm Banner start =================-->
   <section class="mb-30px">
     <div class="container">
@@ -59,9 +60,6 @@
     </div>
   </section>
   <!--================ Hero sm Banner end =================-->
-
-
-
 
   <!--================ Start Blog Post Area =================-->
   <section class="blog-post-area section-margin">
@@ -148,7 +146,7 @@
     </div>
   </section>
   <!--================ End Blog Post Area =================-->
-
+  {% endblock %}
   <!--================ Start Footer Area =================-->
   <footer class="footer-area section-padding">
     <div class="container">
