@@ -65,7 +65,7 @@
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
                   {% if most_popular_post.image_url %}
-                    <img class="card-img rounded-0" src="{% static most_popular_post.image_url %}" alt="">
+                    <img class="card-img rounded-0" src="{{most_popular_post.image_url}}" alt="">
                   {% else %}
                     <img class="img-fluid" src="{% static 'img/blog/blog1.png' %}" alt="">
                   {% endif %}
@@ -90,7 +90,7 @@
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   {% if fresh_post.image_url %}
-                    <img class="img-fluid" src="{% static fresh_post.image_url %}" alt="">
+                    <img class="img-fluid" src="{{fresh_post.image_url}}" alt="">
                   {% else %}
                     <img class="img-fluid" src="{% static 'img/blog/blog1.png' %}" alt="">
                   {% endif %}
